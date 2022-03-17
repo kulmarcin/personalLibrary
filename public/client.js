@@ -104,6 +104,9 @@ $(document).ready(function () {
       data: $('#newBookForm').serialize(),
       success: function (data) {
         //update list
+        const json = JSON.stringify(data)
+        alert(json)
+        location.reload()
       }
     });
   });
